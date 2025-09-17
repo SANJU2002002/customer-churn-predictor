@@ -7,7 +7,8 @@ st.title("Churn Predictor — Interactive Demo")
 @st.cache_resource # Updated from st.cache
 def load_artifacts():
     xgb = joblib.load('models/xgb_pipeline_v1.pkl')
-    sample = pd.read_csv('data/telco_clean.csv').sample(200, random_state=42)
+    # Load the augmented data with engineered features
+    sample = pd.read_csv('data/telco_augmented_clean.csv').sample(200, random_state=42)
     return xgb, sample
 
 try:
