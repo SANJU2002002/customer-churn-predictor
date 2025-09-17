@@ -4,7 +4,7 @@ import joblib, pandas as pd, numpy as np
 st.set_page_config(layout='wide', page_title='Churn Predictor Demo')
 st.title("Churn Predictor — Interactive Demo")
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource # Updated from st.cache
 def load_artifacts():
     xgb = joblib.load('models/xgb_pipeline_v1.pkl')
     sample = pd.read_csv('data/telco_clean.csv').sample(200, random_state=42)
@@ -12,8 +12,9 @@ def load_artifacts():
 
 try:
     model, sample = load_artifacts()
-except:
-    st.error("Models/data not found. Place models in /models and data in /data")
+except Exception as e:
+    st.error(f"Error loading models/data: {e}")
+    st.error("Please ensure 'models' and 'data' folders are in the app's root directory with the necessary files.")
     st.stop()
 
 customer = st.selectbox("Pick a sample row index", sample.index.tolist())
