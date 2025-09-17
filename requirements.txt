@@ -2,6 +2,6 @@ joblib
 pandas
 numpy
 streamlit
-sklearn
+scikit-learn
 xgboost
 imbalanced-learn
