@@ -1,0 +1,11 @@
+gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,tenure_group,avg_charge
+Female,0,0,1,41,1,0.0,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,1,Credit card (automatic),20.25,865.0,24-48,21.097560975609756
+Male,0,0,1,29,1,0.0,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,0,Mailed check,19.85,535.05,24-48,18.45
+Male,0,0,0,72,1,0.0,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,1,Credit card (automatic),19.8,1468.75,60+,20.399305555555557
+Female,0,1,0,64,1,1.0,DSL,No,No,Yes,Yes,No,No,One year,0,Bank transfer (automatic),58.35,3756.45,60+,58.69453125
+Female,1,1,0,20,1,0.0,Fiber optic,No,No,No,No,Yes,Yes,One year,1,Bank transfer (automatic),91.0,1859.5,12-24,92.975
+Male,0,1,0,52,1,1.0,DSL,Yes,Yes,Yes,Yes,No,Yes,One year,1,Credit card (automatic),81.4,4354.45,48-60,83.73942307692307
+Female,0,0,0,5,1,1.0,DSL,Yes,No,No,No,No,No,Month-to-month,1,Electronic check,53.8,283.95,0-12,56.79
+Male,0,0,0,1,0,,DSL,No,No,No,No,No,No,Month-to-month,0,Mailed check,25.35,25.35,0-12,25.35
+Male,0,1,1,72,1,0.0,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,0,Bank transfer (automatic),20.3,1401.15,60+,19.460416666666667
+Female,0,1,1,54,1,1.0,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,0,Credit card (automatic),91.3,4965.0,48-60,91.94444444444444
